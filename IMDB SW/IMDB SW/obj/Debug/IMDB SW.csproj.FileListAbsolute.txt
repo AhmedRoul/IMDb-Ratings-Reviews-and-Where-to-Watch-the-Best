@@ -1,0 +1,68 @@
+E:\IMDB SW\IMDB SW\obj\Debug\IMDB SW.csproj.AssemblyReference.cache
+E:\IMDB SW\IMDB SW\obj\Debug\IMDB SW.csproj.SuggestedBindingRedirects.cache
+E:\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.Homepage.resources
+E:\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.Login.resources
+E:\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.Properties.Resources.resources
+E:\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.StartApp.resources
+E:\IMDB SW\IMDB SW\obj\Debug\IMDB SW.csproj.GenerateResource.cache
+E:\IMDB SW\IMDB SW\obj\Debug\IMDB SW.csproj.CoreCompileInputs.cache
+E:\IMDB SW\IMDB SW\bin\Debug\IMDB SW.exe.config
+E:\IMDB SW\IMDB SW\bin\Debug\IMDB SW.exe
+E:\IMDB SW\IMDB SW\bin\Debug\IMDB SW.pdb
+E:\IMDB SW\IMDB SW\bin\Debug\Oracle.DataAccess.dll
+E:\IMDB SW\IMDB SW\obj\Debug\IMDB SW.csproj.CopyComplete
+E:\IMDB SW\IMDB SW\obj\Debug\IMDB SW.exe
+E:\IMDB SW\IMDB SW\obj\Debug\IMDB SW.pdb
+E:\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.HomePageWithLogin.resources
+C:\Users\hp\source\repos\IMDB SW\IMDB SW\obj\Debug\IMDB SW.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\IMDB SW\IMDB SW\obj\Debug\IMDB SW.exe
+C:\Users\hp\source\repos\IMDB SW\IMDB SW\obj\Debug\IMDB SW.pdb
+C:\Users\hp\source\repos\IMDB SW\IMDB SW\bin\Debug\IMDB SW.exe.config
+C:\Users\hp\source\repos\IMDB SW\IMDB SW\bin\Debug\IMDB SW.exe
+C:\Users\hp\source\repos\IMDB SW\IMDB SW\bin\Debug\IMDB SW.pdb
+C:\Users\hp\source\repos\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.Homepage.resources
+C:\Users\hp\source\repos\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.HomePageWithLogin.resources
+C:\Users\hp\source\repos\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.Login.resources
+C:\Users\hp\source\repos\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.Properties.Resources.resources
+C:\Users\hp\source\repos\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.search.resources
+C:\Users\hp\source\repos\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.StartApp.resources
+C:\Users\hp\source\repos\IMDB SW\IMDB SW\obj\Debug\IMDB SW.csproj.GenerateResource.cache
+C:\Users\hp\source\repos\IMDB SW\IMDB SW\obj\Debug\IMDB SW.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.Form1.resources
+E:\IMDB SW (2)\IMDB SW\IMDB SW\bin\Debug\IMDB SW.exe.config
+E:\IMDB SW (2)\IMDB SW\IMDB SW\bin\Debug\IMDB SW.exe
+E:\IMDB SW (2)\IMDB SW\IMDB SW\bin\Debug\IMDB SW.pdb
+E:\IMDB SW (2)\IMDB SW\IMDB SW\bin\Debug\Oracle.DataAccess.dll
+E:\IMDB SW (2)\IMDB SW\IMDB SW\obj\Debug\IMDB SW.csproj.AssemblyReference.cache
+E:\IMDB SW (2)\IMDB SW\IMDB SW\obj\Debug\IMDB SW.csproj.SuggestedBindingRedirects.cache
+E:\IMDB SW (2)\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.Form1.resources
+E:\IMDB SW (2)\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.Homepage.resources
+E:\IMDB SW (2)\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.HomePageWithLogin.resources
+E:\IMDB SW (2)\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.Login.resources
+E:\IMDB SW (2)\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.Properties.Resources.resources
+E:\IMDB SW (2)\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.search.resources
+E:\IMDB SW (2)\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.StartApp.resources
+E:\IMDB SW (2)\IMDB SW\IMDB SW\obj\Debug\IMDB SW.csproj.GenerateResource.cache
+E:\IMDB SW (2)\IMDB SW\IMDB SW\obj\Debug\IMDB SW.csproj.CoreCompileInputs.cache
+E:\IMDB SW (2)\IMDB SW\IMDB SW\obj\Debug\IMDB SW.csproj.CopyComplete
+E:\IMDB SW (2)\IMDB SW\IMDB SW\obj\Debug\IMDB SW.exe
+E:\IMDB SW (2)\IMDB SW\IMDB SW\obj\Debug\IMDB SW.pdb
+E:\TEAM 107 SW\IMDB SW\IMDB SW\bin\Debug\IMDB SW.exe.config
+E:\TEAM 107 SW\IMDB SW\IMDB SW\obj\Debug\IMDB SW.exe
+E:\TEAM 107 SW\IMDB SW\IMDB SW\obj\Debug\IMDB SW.pdb
+E:\TEAM 107 SW\IMDB SW\IMDB SW\obj\Debug\IMDB SW.csprojResolveAssemblyReference.cache
+E:\TEAM 107 SW\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.Form1.resources
+E:\TEAM 107 SW\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.Homepage.resources
+E:\TEAM 107 SW\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.HomePageWithLogin.resources
+E:\TEAM 107 SW\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.Login.resources
+E:\TEAM 107 SW\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.Properties.Resources.resources
+E:\TEAM 107 SW\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.search.resources
+E:\TEAM 107 SW\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.StartApp.resources
+E:\TEAM 107 SW\IMDB SW\IMDB SW\obj\Debug\IMDB SW.csproj.GenerateResource.Cache
+E:\TEAM 107 SW\IMDB SW\IMDB SW\bin\Debug\IMDB SW.exe
+E:\TEAM 107 SW\IMDB SW\IMDB SW\bin\Debug\IMDB SW.pdb
+E:\TEAM 107 SW\IMDB SW\IMDB SW\bin\Debug\Oracle.DataAccess.dll
+E:\TEAM 107 SW\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.ActorsDisplay.resources
+E:\TEAM 107 SW\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.RateSearch.resources
+E:\TEAM 107 SW\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.Admin.resources
+E:\TEAM 107 SW\IMDB SW\IMDB SW\obj\Debug\IMDB_SW.GetActors.resources

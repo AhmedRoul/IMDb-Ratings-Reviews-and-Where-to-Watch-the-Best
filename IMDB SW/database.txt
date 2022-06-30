@@ -1,0 +1,43 @@
+create or replace PROCEDURE insert_RATE
+( idmovies IN NUMBER
+, iduser IN NUMBER
+, rate IN NUMBER,
+Avg_rate_out out Number) AS
+avg_rate number;
+BEGIN
+ insert into  user_rating values (iduser,idmovies,rate);
+ select Avg(rating) into avg_rate from user_rating where movie_id=idmovies;
+ update Movie set Movie_rating=avg_rate  where  movieid=idmovies;
+ Avg_rate_out:=avg_rate;
+ 
+END insert_RATE;
+
+
+create or replace PROCEDURE UPDATE_RATE
+( idmovies IN NUMBER
+, iduser IN NUMBER
+, rate IN NUMBER,
+Avg_rate_out out Number) AS
+avg_rate number;
+BEGIN
+ update user_rating set rating =rate where movie_id=idmovies And user_id=iduser;
+ select Avg(rating) into avg_rate from user_rating where movie_id=idmovies;
+ 
+ update Movie set Movie_rating=avg_rate  where  movieid=idmovies;
+ Avg_rate_out:=avg_rate;
+ 
+END UPDATE_RATE;
+
+create or replace
+PROCEDURE GET_ACTORNAMES
+( movie_name_in IN VARCHAR2
+, actor_name_out OUT sys_refcursor
+) AS
+BEGIN
+OPEN actor_name_out FOR
+ 
+  SELECT ac.actor_name  
+  FROM actorsinfo ac , movie m, movieactors  mas
+  WHERE movie_name_in = m.moviename And mas.movieid = m.movieid
+  And mas.actorid=ac.actor_id;
+END GET_ACTORNAMES;

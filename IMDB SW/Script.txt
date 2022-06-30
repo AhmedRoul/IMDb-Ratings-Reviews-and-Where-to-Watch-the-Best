@@ -1,0 +1,165 @@
+drop table USEREDITS cascade constraints;
+drop table MOVIECATEGORY cascade constraints;
+drop table ACTORSINFO cascade constraints;
+drop table ADMININFO;
+drop table Users cascade constraints;
+drop table SHOWACTORS cascade constraints;
+drop table MOVIE cascade constraints;
+drop table MOVIEACTORS cascade constraints;
+drop table WATCHLIST cascade constraints;
+drop table REWARDS cascade constraints;
+drop table TVSHOW cascade constraints;
+drop table MOVIEREVIEW cascade constraints;
+
+CREATE TABLE USEREDITS
+(EDIT_ID number(10) PRIMARY KEY,EDIT_STATUS varchar2(20));
+
+insert into USEREDITS values
+(1,'Pending');
+insert into USEREDITS values
+(2,'Accepted');
+insert into USEREDITS values
+(3,'Not Accepted');
+insert into USEREDITS values
+(4,'Accepted');
+
+Create table Users
+(USERID number(10) PRIMARY KEY,USERNAME varchar2(20),USERPASSWORD varchar2(20), 
+EDITS_ID number(10) references USEREDITS(EDIT_ID) ON DELETE CASCADE,REGISTERATION_DATE date,SHOW_PERSONAL_RATINGS varchar2(1));
+
+insert into Users values
+(001,'Nahed','123',1,'10-jun-2021','0');
+insert into Users values
+(002,'Sondos','7528',2,'1-feb-2021','1');
+insert into Users values
+(003,'Ahmed','nx3jnr',3,'15-july-2020','1');
+insert into Users values
+(004,'Yara','123',4,'7-mar-2021','0');
+insert into Users values
+(005,'admin','admin',4,'1-jan-2020','0');
+
+ALTER TABLE
+    Users ADD CONSTRAINT users_username_unique UNIQUE (UserName);
+
+CREATE TABLE MOVIECATEGORY
+(CATRGORY_ID number(3) PRIMARY KEY,CATEGORY_NAME varchar2(20));
+
+insert into MOVIECATEGORY values
+(10,'Action');
+insert into MOVIECATEGORY values
+(20,'Drama');
+insert into MOVIECATEGORY values
+(30,'Animation');
+insert into MOVIECATEGORY values
+(40,'Comedy');
+
+CREATE TABLE MOVIE
+(MOVIEID number(10) PRIMARY KEY,MOVIENAME varchar2(50),RELEASE_DATE date,MOVIE_RATING number(5),
+MOVIE_CATEGORY_ID number(3) references MOVIECATEGORY(CATRGORY_ID) ON DELETE CASCADE,MOVIE_DURATION number(3));
+
+insert into MOVIE values
+(04,'The Batman','15-feb-2021',8.1 ,10 ,170);
+insert into MOVIE values
+(07,'The Northman','2-mar-2021',7.9 ,20 ,137);
+insert into MOVIE values
+(02,'Everything Everywhere all at Once','4-jun-2022', 8, 30, 140);
+insert into MOVIE values
+(08,'The Mask','15-feb-2022', 9, 40, 130);
+
+
+CREATE TABLE ACTORSINFO 
+(ACTOR_ID number(10) PRIMARY KEY, ACTOR_NAME varchar2(20), GENDER varchar2(1), ACTORROLE varchar2(50));
+
+insert into ACTORSINFO values
+(1, 'Brad Pitt' ,'M', 'Police Offecer');
+insert into ACTORSINFO values
+(2,'Rachael Huntley','F','Dancer');
+insert into ACTORSINFO values
+(3,'Michelle Monaghan','F','Teacher');
+insert into ACTORSINFO values
+(4,'Keith David','M', 'Father');
+
+CREATE TABLE MOVIEACTORS
+(MOVIEID number(10) references MOVIE(MOVIEID) ON DELETE CASCADE,ACTORID number(10) references ACTORSINFO(ACTOR_ID) ON DELETE CASCADE);
+
+insert into MOVIEACTORS values
+(04 ,1);
+insert into MOVIEACTORS values
+(07, 2);
+insert into MOVIEACTORS values
+(02, 3);
+insert into MOVIEACTORS values
+(08, 4);
+
+CREATE TABLE WATCHLIST
+(USER_ID number(10) references Users(USERID) ON DELETE CASCADE,MOVIE_ID number(10) references MOVIE(MOVIEID) ON DELETE CASCADE);
+
+insert into watchlist values
+(001, 04);
+insert into watchlist values
+(002, 07);
+insert into watchlist values
+(003, 02);
+insert into watchlist values
+(004, 08);
+
+CREATE TABLE USER_RATING 
+(USER_ID number(10) references Users(USERID) ON DELETE CASCADE,MOVIE_ID number(10) references MOVIE(MOVIEID) ON DELETE CASCADE,RATING number(3));
+
+insert into USER_RATING values
+(001, 04, 9.1);
+insert into USER_RATING values
+(002, 07, 8);
+insert into USER_RATING values
+(003, 02, 6.2);
+insert into USER_RATING values
+(004, 08, 8.4);
+
+CREATE TABLE MOVIEREVIEW
+(MOVIEID number(10) references MOVIE(MOVIEID) ON DELETE CASCADE,REVIEW varchar2(255));
+
+insert into MOVIEREVIEW values
+(04, 'This is just a good movie');
+insert into MOVIEREVIEW values
+(07, 'One of my favourite');
+insert into MOVIEREVIEW values
+(02, 'I dont like it');
+insert into MOVIEREVIEW values
+(08, 'The most underratted movies i have ever watched');
+
+CREATE TABLE ADMININFO 
+(ADMIN_ID number(5) PRIMARY KEY,USERNAME varchar2(20),ADMINPASSWORD varchar2(8));
+
+insert into ADMININFO values
+(0123,'Nahed','nks353');
+insert into ADMININFO values
+(0456,'Tarek','r42@dd');
+insert into ADMININFO values
+(0789,'Sarah','234fec');
+
+CREATE TABLE TVSHOW
+(SHOWID number(10) PRIMARY KEY,SHOWNAME varchar2(50),NUMBEROFSEASONS number(2),SHOWDURATION number(3),
+ACTORID number(10) references ACTORSINFO(ACTOR_ID) ON DELETE CASCADE);
+
+insert into TVSHOW values
+(100, 'Growing Pains', 1, 60, 1);
+insert into TVSHOW values
+(200, 'Americas Most Wanted: America Fights Back', 26, 340, 2);
+insert into TVSHOW values
+(300, 'Bad Monkey', 1, 180, 3);
+insert into TVSHOW values
+(400, 'New Warriors', 1, 120, 4);
+
+CREATE TABLE SHOWACTORS 
+(SHOWID number(10) references TVSHOW(SHOWID) ON DELETE CASCADE,ACTORID number(10) references ACTORSINFO(ACTOR_ID) ON DELETE CASCADE);
+
+insert into SHOWACTORS values
+(100, 1);
+insert into SHOWACTORS values
+(200, 2);
+insert into SHOWACTORS values
+(300, 3);
+insert into SHOWACTORS values
+(400, 4);
+
+COMMIT;
